@@ -155,17 +155,6 @@ copy .env.example .env.local   # Windows PowerShell
 
 Create a free key at [CARTO basemaps](https://carto.com/basemaps/apikey/) and set:
 
-```text
-VITE_CARTO_API_KEY=your_key_here
-```
-
-- With a key: CARTO **Dark Matter** tiles are loaded, with visible © OpenStreetMap and © CARTO attribution.
-- Without a key: the map falls back to OpenStreetMap tiles with a map-only dark visual treatment and © OpenStreetMap attribution. The map still works; no blank canvas is shown.
-- Never commit `.env.local`. Vite embeds the value at dev/build time; add the same variable in the Vercel project if you want Dark Matter in production.
-
-Map coordinates come only from `map_points` and `state_balance` in the generated JSON. Markers are city-level postcode-centroid aggregates; corridors link state centroids schematically. Distances are straight-line Haversine estimates, not routes or delivery tracking.
-
-Append `?corridors=1` before the hash to open a map view with the top-corridor layer already enabled, for example `http://localhost:5173/?corridors=1#/geospatial`.
 
 ### Dashboard pages
 
@@ -179,25 +168,6 @@ Append `?corridors=1` before the hash to open a map view with the top-corridor l
 | Buyer experience | Review and delivery histograms, delivery/review relationship, payment bars, retention gauge |
 | Data & methodology | Source inventory, cleaning audit, coverage meters, definitions, ML method, limitations |
 
-## Deploy to Vercel
-
-Python is used locally to generate the dashboard JSON; Vercel only builds and serves the React app.
-
-1. Run `python run_analysis.py` first.
-2. Confirm `frontend/public/data/market_intelligence.json` has `"status": "ready"` and populated metrics.
-3. Commit and push the generated JSON file to GitHub.
-4. Import the repository into Vercel.
-5. Set **Framework Preset: Vite**.
-6. Set **Root Directory: `frontend`**.
-7. Build Command: `npm run build` (or leave the Vite default).
-8. Output Directory: `dist`.
-9. Install Command: `npm install` (or leave the default).
-10. Optionally add `VITE_CARTO_API_KEY` as a project environment variable for the Dark Matter basemap.
-11. Deploy.
-
-There is intentionally no Python `requirements.txt` in `frontend/`. Setting the Vercel root directory to `frontend` ensures Vercel installs the React/Vite dependencies, not the root Python environment.
-
-After a new local analysis run, commit the refreshed `frontend/public/data/market_intelligence.json` and Vercel will rebuild the dashboard.
 
 ## Analytical approach and definitions
 
