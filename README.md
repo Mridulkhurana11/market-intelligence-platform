@@ -6,7 +6,6 @@ An independent Business Analyst portfolio project that transforms a public marke
 
 The frontend is a premium dark geospatial console branded **Obsidian Atlas**: a compact navigation rail, an editorial panel layout, a real interactive Leaflet map and purpose-built chart types for seven analytical pages.
 
-> Self-initiated portfolio case study. Not commissioned by Olist, Kaggle, any seller in the dataset, MapmyIndia, Amdocs, or an employer.
 
 ## Business question
 
