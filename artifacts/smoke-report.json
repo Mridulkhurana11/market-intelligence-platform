@@ -1,0 +1,160 @@
+{
+  "generated_at": "2026-11-20T08:34:03.170Z",
+  "base_url": "http://localhost:4173",
+  "viewport": {
+    "width": 1600,
+    "height": 1000,
+    "deviceScaleFactor": 1
+  },
+  "pages": {
+    "overview": {
+      "title": "Obsidian Atlas · Market Intelligence",
+      "h1": "Market overview",
+      "breadcrumb": "Market overview",
+      "activeNav": "Market overview",
+      "panels": 5,
+      "charts": 1,
+      "maps": 1,
+      "tableRows": 0,
+      "stateView": null,
+      "textLength": 3394
+    },
+    "trends": {
+      "title": "Obsidian Atlas · Market Intelligence",
+      "h1": "Market trends",
+      "breadcrumb": "Market trends",
+      "activeNav": "Market trends",
+      "panels": 4,
+      "charts": 3,
+      "maps": 0,
+      "tableRows": 0,
+      "stateView": null,
+      "textLength": 2428
+    },
+    "categories": {
+      "title": "Obsidian Atlas · Market Intelligence",
+      "h1": "Category intelligence",
+      "breadcrumb": "Category intelligence",
+      "activeNav": "Category intelligence",
+      "panels": 5,
+      "charts": 4,
+      "maps": 0,
+      "tableRows": 74,
+      "stateView": null,
+      "textLength": 6683
+    },
+    "sellers": {
+      "title": "Obsidian Atlas · Market Intelligence",
+      "h1": "Seller benchmarking",
+      "breadcrumb": "Seller benchmarking",
+      "activeNav": "Seller benchmarking",
+      "panels": 4,
+      "charts": 7,
+      "maps": 0,
+      "tableRows": 60,
+      "stateView": null,
+      "textLength": 5263
+    },
+    "geospatial": {
+      "title": "Obsidian Atlas · Market Intelligence",
+      "h1": "Geospatial intelligence",
+      "breadcrumb": "Geospatial intelligence",
+      "activeNav": "Geospatial intelligence",
+      "panels": 5,
+      "charts": 2,
+      "maps": 1,
+      "tableRows": 15,
+      "stateView": null,
+      "textLength": 3313
+    },
+    "experience": {
+      "title": "Obsidian Atlas · Market Intelligence",
+      "h1": "Buyer experience",
+      "breadcrumb": "Buyer experience",
+      "activeNav": "Buyer experience",
+      "panels": 6,
+      "charts": 4,
+      "maps": 0,
+      "tableRows": 15,
+      "stateView": null,
+      "textLength": 2790
+    },
+    "quality": {
+      "title": "Obsidian Atlas · Market Intelligence",
+      "h1": "Data & methodology",
+      "breadcrumb": "Data & methodology",
+      "activeNav": "Data & methodology",
+      "panels": 7,
+      "charts": 0,
+      "maps": 0,
+      "tableRows": 18,
+      "stateView": null,
+      "textLength": 4761
+    }
+  },
+  "interactions": {
+    "trendsMetric": "Orders",
+    "categorySearch": {
+      "beforeSearch": 74,
+      "afterSearch": 1,
+      "changed": true
+    },
+    "sellerSearch": {
+      "before": 60,
+      "after": 13,
+      "changed": true
+    },
+    "mapLayers": {
+      "initialMarkers": 360,
+      "withoutBuyers": 180,
+      "withoutSellers": 180,
+      "withCorridors": 368,
+      "buyerToggleWorks": true,
+      "sellerToggleWorks": true,
+      "corridorLayerDrawn": true,
+      "corridorPressed": "true"
+    }
+  },
+  "responsive": {
+    "overview": {
+      "bodyScrollWidth": 390,
+      "viewportWidth": 390,
+      "horizontalOverflow": false,
+      "railHeight": 62,
+      "railWidth": 390,
+      "kpiColumns": 2
+    },
+    "geospatial": {
+      "bodyScrollWidth": 390,
+      "viewportWidth": 390,
+      "horizontalOverflow": false,
+      "mapHeight": 420,
+      "legendVisible": true
+    }
+  },
+  "exceptions": [],
+  "console_errors": [],
+  "log_errors": [],
+  "screenshots": [
+    "screenshots/overview.png",
+    "screenshots/trends.png",
+    "screenshots/categories.png",
+    "screenshots/sellers.png",
+    "screenshots/geospatial.png",
+    "screenshots/experience.png",
+    "screenshots/quality.png",
+    "screenshots/geospatial-map-all-layers.png",
+    "screenshots/mobile-overview.png",
+    "screenshots/mobile-geospatial.png"
+  ],
+  "summary": {
+    "pagesChecked": 7,
+    "pagesWithExpectedHeading": true,
+    "pagesWithPanels": true,
+    "pagesWithVisualContent": true,
+    "noLoadingOrErrorStates": true,
+    "mapInteractionsPass": true,
+    "responsiveNoOverflow": true,
+    "noBrowserErrors": true
+  }
+}

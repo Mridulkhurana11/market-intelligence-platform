@@ -1,0 +1,51 @@
+# Python
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ipynb_checkpoints/
+
+# Node / Vite
+node_modules/
+frontend/node_modules/
+frontend/dist/
+
+# Local outputs: keep dashboard JSON, but don't commit row-level extracts
+outputs/*.csv
+outputs/*.parquet
+outputs/*.xlsx
+!outputs/.gitkeep
+
+# Dataset archive only; extracted source CSVs are intentionally eligible for Git
+data/brazilian-ecommerce.zip
+data/**/*.zip
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Secrets
+.env
+.env.*
+!.env.example
+**/credentials
+**/credentials.*
+**/*credentials*.json
+**/*secret*
+**/*api_key*
+**/*apikey*
+**/*.pem
+**/*.key
+**/.netrc
+**/.npmrc
+
+# Temporary files and logs
+*.tmp
+*.temp
+*.bak
+*.swp
+*~
+*.log
+# Download archive (extract CSV files before running)
